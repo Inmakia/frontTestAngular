@@ -1,0 +1,14 @@
+{
+  "shipments": "Shipments",
+  "status": "Status",
+  "price": "Price",
+  "parcels": "Parcels",
+  "width": "Width",
+  "length": "Length",
+  "weight": "Weight",
+  "height": "Height",
+  "orderDate": "Order date",
+  "reference": "Reference",
+  "shipmentCustomReference": "Shipment custom reference",
+  "appTitle": "Packlink shipment sorting application"
+}

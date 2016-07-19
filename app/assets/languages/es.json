@@ -1,0 +1,14 @@
+{
+  "shipments": "Envíos",
+  "status": "Estado",
+  "price": "Precio",
+  "parcels": "Paquetes",
+  "width": "Ancho",
+  "length": "Largo",
+  "weight": "Peso",
+  "height": "Alto",
+  "orderDate": "Fecha de pedido",
+  "reference": "Referencia",
+  "shipmentCustomReference": "Referencia personalizada de envío",
+  "appTitle": "Aplicación de ordenación de envíos de Packlink"
+}
