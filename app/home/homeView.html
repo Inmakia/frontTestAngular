@@ -3,17 +3,17 @@
   <thead>
     <tr>
       <th>
-        <a class="clickable" ng-click="sortType = 'status'; sortReverse = !sortReverse;">{{ 'status' | translate }}
-          <span ng-show="sortType = 'status' && !sortReverse" class="downArrow"></span>
-          <span ng-show="sortType = 'status' && sortReverse" class="upArrow"></span>
+        <a class="clickable" ng-click="sortBy('status')">{{ 'status' | translate }}
+          <span ng-show="sortType === 'status' && !sortReverse" class="downArrow"></span>
+          <span ng-show="sortType === 'status' && sortReverse" class="upArrow"></span>
         </a>
       </th>
       <th>{{ 'price' | translate }}</th>
       <th>{{ 'parcels' | translate }}</th>
       <th>
-        <a class="clickable" ng-click="sortType = 'orderDate'; sortReverse = !sortReverse;">{{ 'orderDate' | translate }}
-          <span ng-show="sortType = 'orderDate' && !sortReverse" class="downArrow"></span>
-          <span ng-show="sortType = 'orderDate' && sortReverse" class="upArrow"></span>
+        <a class="clickable" ng-click="sortBy('orderDate')">{{ 'orderDate' | translate }}
+          <span ng-show="sortType === 'orderDate' && !sortReverse" class="downArrow"></span>
+          <span ng-show="sortType === 'orderDate' && sortReverse" class="upArrow"></span>
         </a>
       </th>
     </tr>
