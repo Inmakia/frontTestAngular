@@ -1,1 +1,82 @@
-style.css
+* { 
+  border: 0;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0; 
+  padding: 0;
+}
+
+header {
+  background-color: #1aa3ff;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 40px;
+} 
+
+#languagePicker {
+  float: right;
+}
+
+button {
+  background-color: #ff8c1a;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+th {
+  background-color: #ffb566;
+  border-radius: 4px;
+  color: #331a00;
+}
+
+tr {
+  background-color: #9cb8d6;
+}
+
+td {
+  border-radius: 5px;
+}
+
+table, tr, th, td {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+caption {
+  color: #1f1f7a;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 35px 15px 15px 5px;
+}
+
+.parcelList {
+  background-color: #cceeff;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  -webkit-box-shadow: 3px 3px 21px 0px rgba(0,0,0,0.49);
+  moz-box-shadow: 3px 3px 21px 0px rgba(0,0,0,0.49);
+  box-shadow: 3px 3px 21px 0px rgba(0,0,0,0.49);
+}
+
+.downArrow:before {
+  content: url('../images/icons/arrow-down.png');
+}
+
+.upArrow:before {
+  content: url('../images/icons/arrow-up.png');
+}
+
+.parcel { 
+  display: block;
+  font-size: 10px;
+}

@@ -27,7 +27,7 @@
          "orderDate":"2016/04/13"
       },
       {
-         "status":"AWAITING_COMPLETION",
+         "status":"COMPLETED",
          "price": "0.3",
          "parcels":[
             {
@@ -37,10 +37,10 @@
                "height":null
             }
          ],
-         "orderDate":"2016/04/12"
+         "orderDate":"2016/06/12"
       },
       {
-         "status": "AWAITING_COMPLETION",
+         "status": "RETURNED",
          "price": "0.3",
          "parcels":[
             {
@@ -97,7 +97,7 @@
          "orderDate":"2016/04/12"
       },
       {
-         "status":"AWAITING_COMPLETION",
+         "status":"COMPLETED",
          "price":"2.3",
          "parcels":[
             {

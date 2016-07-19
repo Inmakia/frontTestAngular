@@ -2,16 +2,35 @@
   <caption>{{ 'shipments' | translate }}</caption>
   <thead>
     <tr>
-      <th>{{ 'status' | translate }}</th>
+      <th>
+        <a class="clickable" ng-click="sortType = 'status'; sortReverse = !sortReverse;">{{ 'status' | translate }}
+          <span ng-show="sortType = 'status' && !sortReverse" class="downArrow"></span>
+          <span ng-show="sortType = 'status' && sortReverse" class="upArrow"></span>
+        </a>
+      </th>
       <th>{{ 'price' | translate }}</th>
       <th>{{ 'parcels' | translate }}</th>
+      <th>
+        <a class="clickable" ng-click="sortType = 'orderDate'; sortReverse = !sortReverse;">{{ 'orderDate' | translate }}
+          <span ng-show="sortType = 'orderDate' && !sortReverse" class="downArrow"></span>
+          <span ng-show="sortType = 'orderDate' && sortReverse" class="upArrow"></span>
+        </a>
+      </th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>data</td>
-      <td>data</td>
-      <td>data</td>
+    <tr ng-repeat="shipment in shipments | orderBy:sortType:sortReverse">
+      <td>{{ shipment.status | translate }}</td>
+      <td>{{ shipment.price }}</td>
+      <td>
+        <div class="parcelList" ng-repeat="parcel in shipment.parcels">
+          <span class="parcel">{{ 'width' | translate }}: {{ parcel.width }}</span> 
+          <span class="parcel">{{ 'length' | translate }}: {{ parcel.length }}</span>
+          <span class="parcel">{{ 'weight' | translate }}: {{ parcel.weight }}</span>
+          <span class="parcel">{{ 'height' | translate }}: {{ parcel.height }}</span>
+        </div>
+      </td>
+      <td>{{ shipment.orderDate }}</td>
     </tr>
   </tbody>
 </table>

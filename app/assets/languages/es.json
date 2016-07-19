@@ -10,5 +10,8 @@
   "orderDate": "Fecha de pedido",
   "reference": "Referencia",
   "shipmentCustomReference": "Referencia personalizada de envío",
-  "appTitle": "Aplicación de ordenación de envíos de Packlink"
+  "appTitle": "Aplicación de ordenación de envíos de Packlink",
+  "AWAITING_COMPLETION": "EN ESPERA",
+  "COMPLETED": "COMPLETADO",
+  "RETURNED": "DEVUELTO"
 }

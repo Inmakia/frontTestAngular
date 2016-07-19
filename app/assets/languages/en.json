@@ -10,5 +10,8 @@
   "orderDate": "Order date",
   "reference": "Reference",
   "shipmentCustomReference": "Shipment custom reference",
-  "appTitle": "Packlink shipment sorting application"
+  "appTitle": "Packlink shipment sorting application",
+  "AWAITING_COMPLETION": "AWAITING COMPLETION",
+  "COMPLETED": "COMPLETED",
+  "RETURNED": "RETURNED"
 }
