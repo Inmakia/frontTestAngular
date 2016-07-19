@@ -45,6 +45,10 @@ td {
   border-radius: 5px;
 }
 
+table {
+  width: 80%;
+}
+
 table, tr, th, td {
   margin: 0 auto;
   padding: 10px;

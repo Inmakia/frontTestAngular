@@ -8,7 +8,12 @@
           <span ng-show="sortType === 'status' && sortReverse" class="upArrow"></span>
         </a>
       </th>
-      <th>{{ 'price' | translate }}</th>
+      <th>
+        <a class="clickable" ng-click="sortBy('price')">{{ 'price' | translate }}
+          <span ng-show="sortType === 'price' && !sortReverse" class="downArrow"></span>
+          <span ng-show="sortType === 'price' && sortReverse" class="upArrow"></span>
+        </a>
+      </th>
       <th>{{ 'parcels' | translate }}</th>
       <th>
         <a class="clickable" ng-click="sortBy('orderDate')">{{ 'orderDate' | translate }}
