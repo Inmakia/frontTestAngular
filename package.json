@@ -1,0 +1,31 @@
+{
+  "name": "frontendangulartest",
+  "version": "1.0.0",
+  "description": "A FrontEnd Angular test",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-server-livereload": "^1.8.1",
+    "require-dir": "^0.3.0"
+  },
+  "scripts": {
+    "browserify": "gulp browserify",
+    "build": "gulp build",
+    "lint": "gulp lint",
+    "serve": "gulp serve",
+    "start": "gulp start"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inmakia/frontTestAngular.git"
+  },
+  "author": "Sonia Martínez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Inmakia/frontTestAngular/issues"
+  },
+  "homepage": "https://github.com/Inmakia/frontTestAngular#readme"
+}
