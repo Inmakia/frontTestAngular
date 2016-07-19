@@ -25,14 +25,14 @@
   </thead>
   <tbody>
     <tr ng-repeat="shipment in shipments | orderBy:sortType:sortReverse">
-      <td>{{ shipment.status | translate }}</td>
+      <td ng-class="{'wait-status':shipment.status=='AWAITING_COMPLETION', 'complete-status':shipment.status=='COMPLETED', 'returned-status':shipment.status=='RETURNED'}" ng-click="sortBy('status')">{{ shipment.status | translate }}</td>
       <td>{{ shipment.price }}</td>
       <td>
         <div class="parcelList" ng-repeat="parcel in shipment.parcels">
-          <span class="parcel">{{ 'width' | translate }}: {{ parcel.width }}</span> 
-          <span class="parcel">{{ 'length' | translate }}: {{ parcel.length }}</span>
-          <span class="parcel">{{ 'weight' | translate }}: {{ parcel.weight }}</span>
-          <span class="parcel">{{ 'height' | translate }}: {{ parcel.height }}</span>
+          <span class="parcel">{{ 'width' | translate }}: {{ parcel.width || '-'}}</span> 
+          <span class="parcel">{{ 'length' | translate }}: {{ parcel.length || '-'}}</span>
+          <span class="parcel">{{ 'weight' | translate }}: {{ parcel.weight || '-'}}</span>
+          <span class="parcel">{{ 'height' | translate }}: {{ parcel.height || '-'}}</span>
         </div>
       </td>
       <td>{{ shipment.orderDate }}</td>

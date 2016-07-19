@@ -84,3 +84,18 @@ caption {
   display: block;
   font-size: 10px;
 }
+
+.wait-status {
+  color: #df7e1d;
+  font-weight: bold;
+}
+
+.complete-status {
+  color: #118311;
+  font-weight: bold;
+}
+
+.returned-status {
+  color: #e60000;
+  font-weight: bold;
+}
